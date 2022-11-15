@@ -1,5 +1,4 @@
 def main():
-    number=0
     unlock='232361'
     lock='232364'
     exitOut='000000'
