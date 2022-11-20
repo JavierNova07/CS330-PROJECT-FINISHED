@@ -11,33 +11,20 @@ def main():
             option=input(" Press enter 1 to generate random code or 000000 to exit ")
             if exitOut == int(option):
                 sw=False
+            elif int(option)<=0:
+                print("Wrong entry")
             elif option == '1':
                 option = str(number)+str(random.randint(0, 9))
             
                 if unlock == int(option):
                     print("System unlocked after " + str(count) + " digits." )
+                    print("Avererage is: ",count/int(option))
+                    print("Minimum number of tries is 1: ")
                 else:
                     count += 6
-              #elif lock == int(option):
-               #     print("System locked")
-                #    count+=1
         except ValueError:
             print("Wrong entry")
 
-
-'''def checkInput(digits: str):
-    counter = 0
-    if digits.isnumeric():
-        for digit in digits:
-            counter += 1
-        
-        if counter == 6:
-            return True
-        else:
-            return False
-            
-    else:
-        return False'''
 
   
 main()
