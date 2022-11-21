@@ -17,4 +17,6 @@ pyinstaller --onefile pythonScriptName.py
 6-Your executable will be created at the location that you specified. Go the location of the repository, you’ll notice that few 
 additional files were created at that location.To find the executable file, open the dist folder. You’ll then see the executable file. Just double click 
 on the file and should open.
- 
+#If you want to create the executable follow the steps from above, but you can just run the program from CMD on windows, just typing from your derised location
+"python nameofthefile.py" example: python Solution2.py 
+
